@@ -79,6 +79,7 @@ section {
   font-size: 24px;
   line-height: 1.16;
   color: #FFFFFF;
+  text-align: left;
   margin-bottom: 31px;
 }
 @media screen and (min-width: 768px) {
@@ -128,10 +129,6 @@ section {
   }
 }
 
-.blog-article__h1 {
-  text-align: left;
-}
-
 .blog-article__block {
   margin-top: 20px;
 }
@@ -172,6 +169,12 @@ section {
   width: 100%;
   max-height: 228px;
   overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .blog-article__image-wrapper {
+    width: 480px;
+    margin: 0 auto;
+  }
 }
 
 .blog-article__img-tab-plus {
@@ -236,11 +239,11 @@ section {
   }
 }
 
-.margin_block {
+.blog-article__margin-block {
   display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .margin_block {
+  .blog-article__margin-block {
     display: block;
     height: 125px;
   }
