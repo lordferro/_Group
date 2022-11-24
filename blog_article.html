@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="./css/blog_article.min.css" />
   </head>
 
-  <body>
+  <body class="blog-article__body" >
     <main>
-      <section class="section">
-        <div class="container article">
-          <h1 class="article__title">Guide to Picking The Right Gaming Headset</h1>
+      <section class="blog-article__section">
+        <div class="blog-article__container article">
+          <h1 class="blog-article__h1">Guide to Picking The Right Gaming Headset</h1>
         </div>
 
-        <div class="article__sprite">
+        <div class="blog-article__sprite">
           <!-- <svg width="120" height="20">
               <use href="./images-article/Blog.svg"></use>
             </svg> -->
@@ -28,18 +28,96 @@
             <img src="./images-article/Vector-mob2.png" width="100%" /> -->
         </div>
 
-        <picture class="article__img-mobile">
-          <source
-            srcset="./images-article/blogartmob-320.jpg 1x, ./images-article/blogartmob-320@2x.jpg 2x"
-            media="(max-width: 767px)"
-            width="100%"
-            height="228px"
-          />
-          <img src="./images-article/blogartmob-320.jpg" alt="hand" />
-        </picture>
+        <div class="lineGuide">
+          <div class="line__320">
+            <svg viewBox="0 0 320 12">
+              <polyline
+                class="line1"
+                points="0,9 121,9 121,1 480,1"
+                fill="none"
+                stroke="#7BE34A"
+                stroke-width="1"
+              />
+              <polyline
+                class="line2"
+                points="0,12 125,12 125,5 480,5"
+                fill="none"
+                stroke="#28780D"
+                stroke-width="1"
+              />
+            </svg>
+          </div>
+          <div class="line__mob">
+            <svg viewBox="0 0 480 12">
+              <polyline
+                class="line1"
+                points="0,9 121,9 121,1 480,1"
+                fill="none"
+                stroke="#7BE34A"
+                stroke-width="1"
+              />
+              <polyline
+                class="line2"
+                points="0,12 125,12 125,5 480,5"
+                fill="none"
+                stroke="#28780D"
+                stroke-width="1"
+              />
+            </svg>
+          </div>
 
-        <div class="container article">
-          <picture class="article__img-tab-plus">
+          <div class="line__tab">
+            <svg viewBox="0 0 768 28">
+              <polyline
+                class="line1"
+                points="0,20 261,20 261,1 768,1"
+                fill="none"
+                stroke="#7BE34A"
+                stroke-width="1"
+              />
+              <polyline
+                class="line2"
+                points="0,28 269,28 269,9 768,9"
+                fill="none"
+                stroke="#28780D"
+                stroke-width="1"
+              />
+            </svg>
+          </div>
+
+          <div class="line__desk">
+            <svg viewBox="0 0 1280 28">
+              <polyline
+                class="line1"
+                points="0,20 417,20 417,1 1280,1"
+                fill="none"
+                stroke="#7BE34A"
+                stroke-width="1"
+              />
+              <polyline
+                class="line2"
+                points="0,28 424,28 424,9 1280,9"
+                fill="none"
+                stroke="#28780D"
+                stroke-width="1"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="blog-article__image-wrapper">
+          <picture class="blog-article__img-mobile">
+            <source
+              srcset="./images-article/blogartmob-320.jpg 1x, ./images-article/blogartmob-320@2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src="./images-article/blogartmob-320.jpg" style="width: 100%" alt="hand" />
+          </picture>
+        </div>
+        
+
+        <div class="blog-article__container article">
+          <picture class="blog-article__img-tab-plus">
             <source
               srcset="./images-article/blogartpc-387.jpg 1x, ./images-article/blogartpc-387@2x.jpg 2x"
               media="(min-width: 1280px)"
@@ -54,9 +132,9 @@
           </picture>
           <div>
             <div class="margin_block"></div>
-            <div class="article__block">
-              <h2 class="article__name">By Ray Ian Ampoloquio</h2>
-              <p class="article__data">Updated on September 21, 2022</p>
+            <div class="blog-article__block">
+              <h2 class="blog-article__h2">By Ray Ian Ampoloquio</h2>
+              <p class="blog-article__data">Updated on September 21, 2022</p>
             </div>
             <p>
               Learn how to choose an amazing gaming headset with this checklist of just 9 surprisingly simple steps.
@@ -70,8 +148,8 @@
               for in a gaming headset
             </p>
           </div>
-          <div class="article__list">
-            <h3>9-Step Checklist to Pick an Amazing Gaming Headset</h3>
+          <div class="blog-article__list">
+            <h3 class="blog-article__h3">9-Step Checklist to Pick an Amazing Gaming Headset</h3>
             <p>Gaming Headphones vs Gaming Headsets</p>
             <ol>
               <li><span>What’s Your Gaming Platform?</span></li>
